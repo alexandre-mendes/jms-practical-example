@@ -1,4 +1,4 @@
-#JMS com ActiveMQ
+# JMS com ActiveMQ
 
 <p>Download ActiveMQ <a href="https://activemq.apache.org/components/classic/">aqui.</a></p>
 <p>Execução do ActiveMQ: </p>
@@ -7,7 +7,7 @@
 ./activemq console
 ~~~
 
-##Explicações
+## Explicações
 
 * Fila (Queue):
 As filas dividem as mensagens entre os consumidores, uma mensagem x só poderá ser entregue a um dos consumidores interessados.
@@ -17,7 +17,7 @@ O consumidor de um topico precisa se indentificar ao menos uma vez para que as m
 Existe também a possibilidade de criar um selector para um consumidor, assim serão consumidas apenas as mensagens que satisfazem a condição pré estabelecida, os selectors possuem uma sintaxe parecida com SQL e buscam valores apenas nos headers (cabeçalho) e properties (propriedades) das mensagens.
 
 
-#Adicionando restrição de acesso
+# Adicionando restrição de acesso
 
 Definindo usuários e grupos
 Para definir usuários e seus grupos devemos usar plugins do ActiveMQ, no nosso caso um plugin de autenticação e outro de autorização. O primeiro passo é adicionar no arquivo conf/activemq.xml os usuários, senhas e seus grupos através do <simpleAuthenticationPlugin>.
